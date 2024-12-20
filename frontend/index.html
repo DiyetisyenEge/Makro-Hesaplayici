@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macro Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Macro Calculator</h1>
+    <form id="macro-form">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" required>
+        
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" required>
+        
+        <label for="activity_level">Activity Level:</label>
+        <select id="activity_level">
+            <option value="1.2">Sedentary</option>
+            <option value="1.375">Lightly Active</option>
+            <option value="1.55">Moderately Active</option>
+            <option value="1.725">Very Active</option>
+            <option value="1.9">Super Active</option>
+        </select>
+        
+        <button type="submit">Calculate</button>
+    </form>
+    <div id="result"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
